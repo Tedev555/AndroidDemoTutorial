@@ -18,7 +18,6 @@
         android:id="@+id/logout"
         android:icon="@drawable/outline_exit_to_app_black_18"
         app:showAsAction="ifRoom"
-        android:title="Logout"
-        />
+        android:title="Logout" />
 
 </menu>
