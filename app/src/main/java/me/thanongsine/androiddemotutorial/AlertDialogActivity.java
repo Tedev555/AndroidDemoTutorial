@@ -28,7 +28,7 @@ public class AlertDialogActivity extends AppCompatActivity {
     private void showAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setTitle("Demo AlertDialog");
+        builder.setTitle("Demo AlertDialog");   
         builder.setMessage("You can click OK or Cancel");
 
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
