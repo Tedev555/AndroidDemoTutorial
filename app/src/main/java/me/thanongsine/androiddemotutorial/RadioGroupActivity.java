@@ -2,6 +2,7 @@ package me.thanongsine.androiddemotutorial;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -15,6 +16,9 @@ public class RadioGroupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_radio_group);
+
+        String msg = getIntent().getStringExtra("myMsg");
+        Log.e("IntentMsgLog", "MyMsg = " + msg);
 
         radioBtn1 = findViewById(R.id.radio1);
         radioBtn2 = findViewById(R.id.radio2);

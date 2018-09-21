@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progressbar"/>
+        <Button
+            android:id="@+id/btn_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio Group"/>
+        <Button
+            android:id="@+id/btn_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ImageView"/>
+        <Button
+            android:id="@+id/btn_alertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog"/>
+        <Button
+            android:id="@+id/btn_options_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Options Menu"/>
+        <Button
+            android:id="@+id/btn_lifecycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Lifecycle"/>
+    </LinearLayout>
+
+</RelativeLayout>

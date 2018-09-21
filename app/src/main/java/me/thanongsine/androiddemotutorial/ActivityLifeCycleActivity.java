@@ -11,6 +11,9 @@ public class ActivityLifeCycleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_cycle);
 
+        String msg = getIntent().getStringExtra("myMsg");
+        Log.e("IntentMsgLog", "MyMsg = " + msg);
+
         Log.e("ActivityLifeCycleLog", "OnCreate");
     }
 

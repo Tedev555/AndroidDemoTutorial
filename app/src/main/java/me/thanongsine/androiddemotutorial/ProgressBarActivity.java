@@ -2,6 +2,7 @@ package me.thanongsine.androiddemotutorial;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -16,6 +17,9 @@ public class ProgressBarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_bar);
+
+        String msg = getIntent().getStringExtra("myMsg");
+        Log.e("IntentMsgLog", "MyMsg = " + msg);
 
         //Blinding views with Java variable
         progressBar = findViewById(R.id.progressbar);
